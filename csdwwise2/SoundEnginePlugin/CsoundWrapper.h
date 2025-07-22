@@ -1,7 +1,8 @@
 // CsoundWrapper.h
 #pragma once
-#include <C:/Program Files/Csound6_x64/include/csound/csound.hpp>
-//#include <csound.hpp>
+
+#include <csound.hpp>
+
 class CsoundWrapper {
 public:
     CsoundWrapper();
