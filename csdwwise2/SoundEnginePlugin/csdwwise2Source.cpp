@@ -40,7 +40,16 @@ AK::IAkPluginParam* Createcsdwwise2SourceParams(AK::IAkPluginMemAlloc* in_pAlloc
     return AK_PLUGIN_NEW(in_pAllocator, csdwwise2SourceParams());
 }
 
-AK_IMPLEMENT_PLUGIN_FACTORY(csdwwise2Source, AkPluginTypeSource, csdwwise2Config::CompanyID, csdwwise2Config::PluginID)
+//AK_IMPLEMENT_PLUGIN_FACTORY(csdwwise2Source, AkPluginTypeSource, csdwwise2Config::CompanyID, csdwwise2Config::PluginID)
+
+AK::PluginRegistration csdwwise2SourceRegistration(
+    AkPluginTypeSource,
+    csdwwise2Config::CompanyID,
+    csdwwise2Config::PluginID,
+    Createcsdwwise2Source,
+    Createcsdwwise2SourceParams
+);
+
 
 csdwwise2Source::csdwwise2Source()
     : m_pParams(nullptr)
