@@ -35,12 +35,17 @@ csdwwise2Plugin::~csdwwise2Plugin()
 {
 }
 
-bool csdwwise2Plugin::GetBankParameters(const GUID & in_guidPlatform, AK::Wwise::Plugin::DataWriter& in_dataWriter) const
+bool csdwwise2Plugin::GetBankParameters(const GUID& in_guidPlatform, AK::Wwise::Plugin::DataWriter& in_dataWriter) const
 {
     // Write bank data here
-    in_dataWriter.WriteReal32(m_propertySet.GetReal32(in_guidPlatform, "Duration"));
+    /*in_dataWriter.WriteReal32(m_propertySet.GetReal32(in_guidPlatform, "Duration"));
 
+    return true;*/
+
+    AkReal32 duration = m_propertySet.GetReal32(in_guidPlatform, "Duration");
+    in_dataWriter.WriteReal32(duration);
     return true;
+
 }
 
 AK_DEFINE_PLUGIN_CONTAINER(csdwwise2);											// Create a PluginContainer structure that contains the info for our plugin
