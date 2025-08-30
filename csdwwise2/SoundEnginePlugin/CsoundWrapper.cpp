@@ -17,7 +17,8 @@ bool CsoundWrapper::load(const char* csdFile) {
         csound->Start();
         initialized = true;
         return true;
-    } else {
+    }
+    else {
         printf("[CsoundWrapper] Failed to compile csd file: %s\n", csdFile);
     }
     return false;

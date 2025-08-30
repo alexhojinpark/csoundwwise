@@ -53,7 +53,7 @@ AKRESULT csdwwise2SourceParams::Init(AK::IAkPluginMemAlloc* in_pAllocator, const
     if (in_ulBlockSize == 0)
     {
         // Initialize default parameters here
-        RTPC.fDuration = 0.0f;
+        RTPC.fDuration = 1.0f; // default is 
         m_paramChangeHandler.SetAllParamChanges();
         return AK_Success;
     }
