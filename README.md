@@ -52,12 +52,12 @@ CsoundWwise bridges the gap between Csound (a powerful computer music programmin
 
 1. **Select a Csound file** using the provided PowerShell script:
    ```powershell
-   ./csdwwise trumpet.csd"
+   ./csdwwise trumpet.csd
    ```
 
 2. **Launch Wwise** (optional):
    ```powershell
-   ./csdwwise trumpet.csd" -LaunchWwise -WwiseExe "C:\Program Files\Audiokinetic\Wwise 2024.1.5\Authoring\x64\Release\bin\Wwise.exe"
+   ./csdwwise trumpet.csd -LaunchWwise -WwiseExe "C:\Program Files\Audiokinetic\Wwise 2024.1.5\Authoring\x64\Release\bin\Wwise.exe"
    ```
 
 3. **In Wwise**: The plugin will appear as a source plugin option, allowing you to create audio objects using your selected Csound file.
@@ -100,6 +100,6 @@ This project includes portions of the AUDIOKINETIC Wwise Technology released und
 
 ## Related Links
 
-- [Wwise Plugin Development Documentation](https://www.audiokinetic.com/library/edge/?source=SDK&id=plugin__dll.html)
-- [Csound Documentation](https://csound.com/docs/)
-- [Wwise SDK](https://www.audiokinetic.com/download/)
+- [Wwise Plugin Development Documentation](https://www.audiokinetic.com/en/public-library/2024.1.7_8863/?source=SDK&id=effectplugin.html)
+- [Csound Documentation](https://csound.com/manual.html)
+- [Wwise SDK](https://www.audiokinetic.com/en/public-library/2024.1.7_8863/?source=SDK&id=index.html)
